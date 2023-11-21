@@ -1,368 +1,446 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" style="overflow: visible !important;">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-        <link rel="shortcut icon" type="image/png" href="img/fav.png"/>
-        <title>PS digital</title>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="css/global.css" type="text/css" media="all" />
-        <link href="fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-        <link href="flaticon/flaticon.css" rel="stylesheet" type="text/css"/>
-        <link href="css/linkstyles.css" rel="stylesheet" type="text/css"/>
-        <link href="css/base.css" rel="stylesheet" type="text/css"/>
-        <link href="css/formstyle.css" rel="stylesheet" type="text/css"/>
+<html xmlns="http://www.w3.org/1999/xhtml" style="overflow: visible !important">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>ISER</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/global.css" type="text/css" media="all" />
+    <link
+      href="fontawesome/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="flaticon/flaticon.css" rel="stylesheet" type="text/css" />
+    <link href="css/linkstyles.css" rel="stylesheet" type="text/css" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/formstyle.css" rel="stylesheet" type="text/css" />
 
-        <style>
-            .background-white~.progressbar,
-            .progressbar {
-                background-color: #06859b;
-            }
-            .ready .progressbar {
-                background-color: transparent;
-            }
-            .data .row{
-                margin:45px 10px 120px !important;
-            }
-            .form-card{
-                margin:0 auto !important;
-            }
-            section.row{
-                position:relative;
-            }
-            /*section.row:before {
-                content: "";
-                left: -20%;
-                top: 0;
-                position: absolute;
-                background-image: url(img/bg.jpg);
-                height: 100%;
-                width: 140%;
-            }*/
-            .data .row p{
-                width:80%;
-                margin:10px auto;
-                display: block;
-            }
-            .form-radio {
-                background-size: 200%;
-                width: 35%;
-                margin:1%;
-                border-radius: 40px;
-                /*box-shadow:4px 4px 10px 1px rgba(0, 0, 0, 0.03), -4px -4px 13px 0px rgba(0, 0, 0, 0.09);*/
-                cursor: pointer;
-                transition: 0.4s;
-                text-align: center;
-                padding:20px;
-                display: inline-block;
-                float: none;
-            }
-            .form-radio:hover {
-                transform: scale(0.95, 0.95);
-                /*box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.27), -4px -3px 9px 2px rgba(0,0,0,0.22);*/
-            }
-            .bg-orange{
-                background-color: #f8a022 ;
-                background-image: url(img/bg3.jpg);
-            }
-            .bg-blue{
-                background-color: #068499;
-                background-image: url(img/bg1.jpg);
-            }
-            .bg-lightblue{
-                background-color: #97d7f4;
-                background-image: url(img/bg2.jpg);
-            }
+    <style>
+      .background-white ~ .progressbar,
+      .progressbar {
+        background-color: #06859b;
+      }
+      .ready .progressbar {
+        background-color: transparent;
+      }
+      .data .row {
+        margin: 45px 10px 120px !important;
+      }
+      .form-card {
+        margin: 0 auto !important;
+      }
+      section.row {
+        position: relative;
+      }
+      .data .row p {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+      }
+      .form-radio {
+        background-size: 200%;
+        width: 35%;
+        margin: 1%;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: 0.4s;
+        text-align: center;
+        padding: 20px;
+        display: inline-block;
+        float: none;
+      }
+      .form-radio:hover {
+        transform: scale(0.95, 0.95);
+      }
+      .bg-orange {
+        background-color: #f8a022;
+        background-image: url(img/bg3.jpg);
+      }
+      .bg-blue {
+        background-color: #068499;
+        background-image: url(img/bg1.jpg);
+      }
+      .bg-lightblue {
+        background-color: #97d7f4;
+        background-image: url(img/bg2.jpg);
+      }
 
-            .form-checkbox-legend{
-                margin: 26px 20px 26px !important;
-                font-family: nexa-b;
-                font-size: 27px !important;
-                color: #fff !important;
-                text-transform: uppercase !important;
-            }
-            .form-budget-legend{
-                margin:0px 0px 30px 0 !important;
-                color:#fff !important;
-                font-weight:bold !important;
-            }
-            .pd{
-                padding-left: 4rem;
-                padding-bottom: 30rem;
-            }
+      .form-checkbox-legend {
+        margin: 26px 20px 26px !important;
+        font-family: nexa-b;
+        font-size: 27px !important;
+        color: #fff !important;
+        text-transform: uppercase !important;
+      }
+      .form-budget-legend {
+        margin: 0px 0px 30px 0 !important;
+        color: #fff !important;
+        font-weight: bold !important;
+      }
+      .pd {
+        padding-left: 4rem;
+        padding-bottom: 30rem;
+      }
+    </style>
+    <link href="css/cursor.css" rel="stylesheet" type="text/css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
 
-        </style>
-        <link href="css/cursor.css" rel="stylesheet" type="text/css"/>
-        <script>document.documentElement.className = "js";
-            var supportsCssVars = function () {
-                var e, t = document.createElement("style");
-                return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
-            };
-            supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-        </script>
-    </head>
+  <body class="body-scroll demo-1">
+    <div class="cursor"></div>
+    <header id="js-header" class="site__header">
+      <a href="index.html">
+        <img src="img/logo.png" alt="" class="site__logo"
+      /></a>
+      <button id="js-toggle-menu" class="site__header__hamburger">
+        <span></span>
+      </button>
 
-    <body class="body-scroll demo-1" >
-        <div class="cursor"></div>
-        <header id="js-header" class="site__header ">
+      <nav id="js-nav" class="site__nav">
+        <ul id="menu-header" class="site__nav__menu">
+          <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="about.html"
+              data-namespace="who"
+              data-letters="Who We Are"
+              >Who We Are</a
+            >
+          </li>
+          <li id="menu-item-294" class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="proj.html"
+              data-namespace="home"
+              data-letters="Portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="services.html"
+              data-namespace="services"
+              data-letters="services"
+              >services</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="casestudy.html"
+              data-namespace="case studies"
+              data-letters="case studies"
+              >case studies</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="careers.html"
+              data-namespace="careers"
+              data-letters="careers"
+              >careers</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              class="link link--kukuri"
+              href="contact.html"
+              data-letters="Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            <a href="index.html"> <img src="img/logo.png" alt="" class="site__logo"/></a>
-            <button id="js-toggle-menu" class="site__header__hamburger">
-                <span></span>
-            </button>
+    <div class="blog barba-container" data-namespace="who">
+      <main>
+        <div data-scroll class="page page--layout-2">
+          <div class="content content--full content--alternate">
+            <div class="content__item content__item--wide">
+              <div class="content__item-imgwrap">
+                <div
+                  class="content__item-img"
+                  style="background-image: url(img/contact.jpg)"
+                ></div>
+              </div>
+              <!--<div class="content__item-deco"></div>-->
+              <h2 class="content__item-title pd">Contact Us</h2>
+            </div>
+            <div class="data">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12" style="text-align: center">
+                    <h2 class="content__item-title mytitle">
+                      <span> It’s Your Call </span>
+                      We’re Here to Help!
+                    </h2>
+                    <p>
+                      If you’re looking to develop the digital presence of your
+                      brand, or to work on a one-time project, or maybe you have
+                      an inquiry, or you’re lost and need help figuring out this
+                      whole digital thing, we’re here! Fill out the form below
+                      and we’ll be getting in touch in no time.
+                    </p>
+                  </div>
+                </div>
 
-            <nav id="js-nav" class="site__nav" >
-                <ul id="menu-header" class="site__nav__menu">
-                    <li  class="menu-item "><a class="link link--kukuri" href="about.html"  data-namespace="who" data-letters="Who We Are">Who We Are</a></li>
-                    <li id="menu-item-294" class="menu-item "><a class="link link--kukuri" href="proj.html" data-namespace="home" data-letters="Portfolio">Portfolio</a></li>
-                    <li  class="menu-item "><a class="link link--kukuri" href="services.html"  data-namespace="services" data-letters="services">services</a></li>
-                    <li  class="menu-item "><a class="link link--kukuri" href="casestudy.html" data-namespace="case studies" data-letters="case studies">case studies</a></li>
-                    <li  class="menu-item "><a class="link link--kukuri" href="careers.html"  data-namespace="careers" data-letters="careers">careers</a></li>
-                    <li  class="menu-item "><a class="link link--kukuri" href="contact.html" data-letters="Contact">Contact</a></li>
-                </ul>
-            </nav> 
-        </header>
-
-        <div class=" blog barba-container" data-namespace="who">
-            <main>
-                <div data-scroll class="page page--layout-2">
-                    <div class="content content--full content--alternate">
-                        <div class="content__item content__item--wide">
-                            <div class="content__item-imgwrap">
-                                <div class="content__item-img" style="background-image: url(img/contact.jpg);"></div>
-                            </div>
-                            <!--<div class="content__item-deco"></div>-->
-                            <h2 class="content__item-title pd">Contact Us</h2>
+                <section
+                  class="row"
+                  data-paroller-factor="-0.1"
+                  data-paroller-type="foreground"
+                  data-paroller-direction="vertical"
+                >
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="form-card contact">
+                      <fieldset class="form-fieldset">
+                        <div class="form-checkbox-legend">
+                          Send us a massage
                         </div>
-                        <div class="data">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12" style="text-align:center">
-                                        <h2 class="content__item-title mytitle">
-                                            <span> It’s Your Call </span>
-                                            We’re Here to Help!
-                                        </h2>
-                                        <p>
-                                            If you’re looking to develop the digital presence of your brand, or to work on a one-time 
-                                            project, or maybe you have an inquiry, or you’re lost and need help figuring out this whole 
-                                            digital thing, we’re here! Fill out the form below and we’ll be getting in touch in no time. 
-                                        </p>
+                        <div class="form-element form-input">
+                          <input
+                            id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9"
+                            class="form-element-field"
+                            placeholder="Please fill in your full name"
+                            type="input"
+                            required
+                          />
+                          <div class="form-element-bar"></div>
+                          <label
+                            class="form-element-label"
+                            for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9"
+                            >Name</label
+                          >
+                        </div>
+                        <div class="form-element form-input">
+                          <input
+                            id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9"
+                            class="form-element-field"
+                            placeholder="Please fill in your phone number"
+                            type="input"
+                            required
+                          />
+                          <div class="form-element-bar"></div>
+                          <label
+                            class="form-element-label"
+                            for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9"
+                            >phone</label
+                          >
+                        </div>
 
-                                    </div>
-                                </div>
+                        <div class="form-element form-input">
+                          <input
+                            id="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz"
+                            class="form-element-field"
+                            placeholder="Please fill in your Email "
+                            type="email"
+                            required
+                          />
+                          <div class="form-element-bar"></div>
+                          <label
+                            class="form-element-label"
+                            for="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz"
+                            >Email</label
+                          >
+                          <small class="form-element-hint"
+                            >We will never spam you!</small
+                          >
+                        </div>
+                        <div class="form-element form-textarea">
+                          <textarea
+                            id="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm"
+                            class="form-element-field"
+                            placeholder=" "
+                          ></textarea>
+                          <div class="form-element-bar"></div>
+                          <label
+                            class="form-element-label"
+                            for="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm"
+                            >project description</label
+                          >
+                        </div>
+                      </fieldset>
+                      <div class="form-actions">
+                        <div class="col-md-6 text-center">
+                          <a href="#" class="btn-main btn"> send </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
 
-                                <section class="row" data-paroller-factor="-0.1" data-paroller-type="foreground" data-paroller-direction="vertical">
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <div class="form-card contact">
-                                            <fieldset class="form-fieldset">    
-                                                <div class="form-checkbox-legend">Send us a massage</div>
-                                                <div class="form-element form-input">
-                                                    <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="Please fill in your full name" type="input" required/>
-                                                    <div class="form-element-bar"></div>
-                                                    <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Name</label>
-                                                </div>
-                                                <div class="form-element form-input">
-                                                    <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="Please fill in your phone number" type="input" required/>
-                                                    <div class="form-element-bar"></div>
-                                                    <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">phone</label>
-                                                </div>
+                <div class="row text-center">
+                  <h2 class="content__item-title mytitle text-center">
+                    <span>our</span>
+                    locations
+                  </h2>
+                  <div
+                    class="form-radio form-radio-block col-md-4 bg-lightblue"
+                  >
+                    <div class="form-checkbox-legend">Dubai</div>
+                    <div class="form-budget-legend">
+                      Address
+                      <p>Dubai Design District, building 3, Dubai, UAE</p>
+                    </div>
 
-                                                <div class="form-element form-input">
-                                                    <input id="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz" class="form-element-field" placeholder="Please fill in your Email " type="email" required/>
-                                                    <div class="form-element-bar"></div>
-                                                    <label class="form-element-label" for="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz">Email</label>
-                                                    <small class="form-element-hint">We will never spam you!</small>
-                                                </div>
-                                                <div class="form-element form-textarea">
-                                                    <textarea id="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm" class="form-element-field" placeholder=" "></textarea>
-                                                    <div class="form-element-bar"></div>
-                                                    <label class="form-element-label" for="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm">project description</label>
-                                                </div>
+                    <div class="form-budget-legend">
+                      Information Desk
+                      <p>
+                        <a href="tel:971553308124"> +971-55-3308124 </a>
+                      </p>
+                    </div>
 
-                                            </fieldset>
-                                            <div class="form-actions">
-                                                <div class="col-md-6 text-center">
-                                                    <a href="#" class="btn-main btn">
-                                                        send
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
+                    <div class="form-budget-legend">
+                      Email
+                      <p>
+                        <a href="mailto:#">test@test.com</a>
+                      </p>
+                    </div>
+                    <div class="form-budget-legend">
+                      For Your Feedback
+                      <p>
+                        <a href="mailto:#"
+                          >test@test.com</a
+                        >
+                      </p>
+                    </div>
 
-                                <div class="row text-center">
-                                    <h2 class="content__item-title mytitle text-center">
-                                        <span>our</span>
-                                        locations
-                                    </h2>
-                                    <div class="form-radio form-radio-block col-md-4 bg-lightblue">
-                                        <div class="form-checkbox-legend">Dubai</div>
-                                        <div class="form-budget-legend">Address
-                                            <p>Dubai Design District, building 3, Dubai, UAE</p>
-                                        </div>
+                    <a href="" class="btn linezegzag">View on google maps</a>
+                  </div>
 
-                                        <div class="form-budget-legend">Information Desk
-                                            <p>
-                                                <a href="tel:971553308124">  +971-55-3308124 </a> 
-                                            </p>
-                                        </div>
+                  <div class="form-radio form-radio-block col-md-4 bg-orange">
+                    <div class="form-checkbox-legend">Alexandria</div>
+                    <div class="form-budget-legend">
+                      Address
+                      <p>
+                        15 Saad Zaghloul Square
+                      </p>
+                    </div>
 
-                                        <div class="form-budget-legend">Email
-                                            <p><a href="mailto:info@psdigital.me">info@psdigital.me</a> </p>
-                                        </div>
-                                        <div class="form-budget-legend">For Your Feedback
-                                            <p><a href="mailto:feedback@psdigital.me">feedback@psdigital.me</a> </p>
-                                        </div>
-
-                                        <a href="" class="btn linezegzag">View on google maps</a>
-                                    </div>
-
-                                    <div class="form-radio form-radio-block col-md-4 bg-orange">
-                                        <div class="form-checkbox-legend">Alexandria</div>
-                                        <div class="form-budget-legend">Address
-                                            <p>15 Saad Zaghloul Square, 4th Floor, El-Raml Station. </p>
-                                        </div>
-
-                                        <!--                                        <div class="form-budget-legend">Information Desk
+                    <!--                                        <div class="form-budget-legend">Information Desk
                                                                                     <p><a href="tel:+201100886224">     +201100886224 </a></p>
                                                                                 </div>-->
 
-                                        <div class="form-budget-legend">Technical Support
-                                            <p><a href="tel:+201026688225">   +201026688225</a> </p>
-                                        </div>
+                    <div class="form-budget-legend">
+                      Technical Support
+                      <p><a href="tel:+201026688225"> +201026688225</a></p>
+                    </div>
 
-                                        <div class="form-budget-legend">Email
-                                            <p><a href="mailto:info@psdigital.me">    info@psdigital.me</a></p>
-                                        </div>
-                                        <div class="form-budget-legend">For Your Feedback
-                                            <p><a href="mailto:feedback@psdigital.me">feedback@psdigital.me</a> </p>
-                                        </div>
-                                        <a href="" class="btn linezegzag">View on google maps</a>
+                    <div class="form-budget-legend">
+                      Email
+                      <p>
+                        <a href="mailto:#">
+                          test@test.com</a
+                        >
+                      </p>
+                    </div>
+                    <div class="form-budget-legend">
+                      For Your Feedback
+                      <p>
+                        <a href="mailto:#"
+                          >test@test.com</a
+                        >
+                      </p>
+                    </div>
+                    <a href="" class="btn linezegzag">View on google maps</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- .barba-container -->
 
-                                    </div>
+    <footer id="js-footer" class="site__footer">
+      <div class="site__footer__container clearfix">
+        <p class="site__footer__container__text">
+          © 2023 powered by ISER
+        </p>
 
-                                    <!--                                    <div class="form-radio form-radio-block col-md-4 bg-blue">
-                                                                            <div class="form-checkbox-legend">Cairo</div>
-                                                                            <div class="form-budget-legend">Address
-                                                                                <p>Dubai Design District, building 3, Dubai, UAE</p>
-                                                                            </div>
-                                    
-                                                                            <div class="form-budget-legend">Information Desk
-                                                                                <p><a href="tel:971553308124">  +971-55-3308124 </a></p>
-                                                                            </div>
-                                    
-                                                                            <div class="form-budget-legend">Email
-                                                                                <p><a href="mailto:Le@psdigital.me">Le@psdigital.me</a> </p>
-                                                                            </div>
-                                    
-                                                                            <a href="" class="btn linezegzag">View on google maps</a>
-                                    
-                                                                        </div>-->
-                                </div>
-                            </div>
-                        </div>
-                        </main>
+        <p class="site__footer__container__text">
+          <a
+            href="#"
+            target="_blank"
+            title="facebook"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a
+            href="#"
+            target="_blank"
+            title="instagram"
+          >
+            <i class="fa fa-instagram"></i
+          ></a>
+          <a
+            href="#"
+            target="_blank"
+            title="linkedin"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="" target="_blank" title="twitter"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
 
-                    </div><!-- .barba-container -->
+    <div class="doors-transition doors-transition_top"></div>
+    <div class="doors-transition doors-transition_bottom"></div>
 
-                    <footer id="js-footer" class="site__footer ">
-                        <div class="site__footer__container clearfix">
+    <div class="progressbar"><span id="progressbar"></span></div>
 
-                            <p class="site__footer__container__text">
-                                © 2020 powered`  by PSdigital
-                            </p>
+    <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery.paroller.js" type="text/javascript"></script>
+    <script>
+      $(function () {
+        $(window).paroller();
+        $("body").scrollspy({ target: "#main-navbar" });
+      });
+    </script>
 
-                            <p class="site__footer__container__text">
-                                <a href="https://www.facebook.com/PSdigital.me/?epa=SEARCH_BOX" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a>
-                                <a  href="https://www.instagram.com/psdigital.me/" target="_blank" title="instagram"> <i class="fa fa-instagram"></i></a>
-                                <a  href="https://www.linkedin.com/company/paradigm-solutions-llc?trk=top_nav_home" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a>
-                                <a  href="" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
-                            </p>
-                        </div>
-                    </footer>
+    <script type="text/javascript" src="js/TweenLite.min.js"></script>
+    <script type="text/javascript" src="js/TimelineLite.min.js"></script>
+    <script type="text/javascript" src="js/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
+    <script type="text/javascript" src="js/functions.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/formindex.js" type="text/javascript"></script>
 
+    <script src="js/cursor.js" type="text/javascript"></script>
 
-                    <div class="doors-transition doors-transition_top" ></div>
-                    <div class="doors-transition doors-transition_bottom" ></div>
-
-                    <div class="progressbar"><span id="progressbar" ></span></div>
-                    <!--  <div class="preloading-div">
-                                <div class="preloading"></div>
-                          <div id="loader" class="pageload-overlay" data-opening="M 0,0 c 0,0 63.5,-16.5 80,0 16.5,16.5 0,60 0,60 L 0,60 Z">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
-                                <path d="M 0,0 c 0,0 -16.5,43.5 0,60 16.5,16.5 80,0 80,0 L 0,60 Z"/>
-                                </svg>
-                            </div>
-                            </div>-->
-
-
-                    <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
-                    <script src="js/jquery.paroller.js" type="text/javascript"></script>
-                    <script>
-            $(function () {
-                $(window).paroller();
-                $('body').scrollspy({target: '#main-navbar'});
-            });
-                    </script>
-
-
-
-
-                    <script type="text/javascript" src="js/TweenLite.min.js"></script>
-                    <script type="text/javascript" src="js/TimelineLite.min.js"></script>
-                    <script type="text/javascript" src="js/CSSPlugin.min.js"></script>
-                    <script type="text/javascript" src="js/app.min.js"></script>
-                    <script type="text/javascript" src="js/functions.min.js"></script>
-                    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-                    <script src="js/formindex.js" type="text/javascript"></script>
-
-                    <!--        titleanimate-browsertab-->
-                    <script>
-
-            $(function () {
-
-
-                // Get page title
-                var pageTitle = $("title").text();
-
-                // Change page title on blur
-                $(window).blur(function () {
-                    $("title").text("PS wating you...");
-
-                });
-
-                // Change page title back on focus
-                $(window).focus(function () {
-                    $("title").text(pageTitle);
-                    animateTitle('PSdigital');
-                });
-
-            });
-            //window.setInterval()
-            function recursiveAnimateTitle(string) {
-                let firstLetter = string[0];
-                let title = document.querySelector('title');
-                title.innerHTML += firstLetter;
-                if (string.length > 1) {
-                    setTimeout(function () {
-                        recursiveAnimateTitle(string.substring(1));
-                    }, 100);
-                }
-            }
-
-            function animateTitle(string) {
-                document.querySelector('title').innerHTML = "";
-                recursiveAnimateTitle(string);
-            }
-
-            animateTitle('PSdigital');
-                    </script>
-
-                    <script src="js/cursor.js" type="text/javascript"></script>
-
-                    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-                    <script src="js/demo.js" type="text/javascript"></script>
-                    </body></html>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/demo.js" type="text/javascript"></script>
+  </body>
+</html>
