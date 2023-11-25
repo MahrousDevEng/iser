@@ -67,7 +67,7 @@
   position: absolute;
   top: 21px;
   left: 0;
-  background-color: #06859b;
+  background-color: #12bbf6;
   font-style: normal;
   font-size: 25px;
   line-height: 73px;
@@ -75,17 +75,6 @@
 .icon-plus img {
   width: 40px;
 }
-/*.icon.icon-plus:before {
-    content:  "";
-    position: absolute;
-    top: 0;
-    left: 0;
-        
-    background-image: url("../flaticon/plus-symbol.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-        
-}*/
 .input-file {
   width: 100%;
   height: 100%;
@@ -98,69 +87,6 @@
   display: block;
   cursor: pointer;
 }
-/*@font-face {
-    font-family: Calibre;
-    src: url(../fonts/Calibre/calibre-light.eot);
-    src: url(../fonts/Calibre/calibre-light.eot?#iefix) format("embedded-opentype"),url(../fonts/Calibre/calibre-light.woff) format("woff"),url(../fonts/Calibre/calibre-light.ttf) format("truetype"),url(../fonts/Calibre/calibre-light.svg#CalibreLight) format("svg");
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Calibre;
-    src: url(../fonts/Calibre/calibre-lightitalic.eot);
-    src: url(../fonts/Calibre/calibre-lightitalic.eot?#iefix) format("embedded-opentype"),url(../fonts/Calibre/calibre-lightitalic.woff) format("woff"),url(../fonts/Calibre/calibre-lightitalic.ttf) format("truetype"),url(../fonts/Calibre/calibre-lightitalic.svg#CalibreLightItalic) format("svg");
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: Calibre;
-    src: url(../fonts/Calibre/calibre-regular.eot);
-    src: url(../fonts/Calibre/calibre-regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Calibre/calibre-regular.woff) format("woff"),url(../fonts/Calibre/calibre-regular.ttf) format("truetype"),url(../fonts/Calibre/calibre-regular.svg#CalibreRegular) format("svg");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Calibre;
-    src: url(../fonts/Calibre/calibre-regularitalic.eot);
-    src: url(../fonts/Calibre/calibre-regularitalic.eot?#iefix) format("embedded-opentype"),url(../fonts/Calibre/calibre-regularitalic.woff) format("woff"),url(../fonts/Calibre/calibre-regularitalic.ttf) format("truetype"),url(../fonts/Calibre/calibre-regularitalic.svg#CalibreRegularItalic) format("svg");
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: Calibre;
-    src: url(../fonts/Calibre/calibre-medium.eot);
-    src: url(../fonts/Calibre/calibre-medium.eot?#iefix) format("embedded-opentype"),url(../fonts/Calibre/calibre-medium.woff) format("woff"),url(../fonts/Calibre/calibre-medium.ttf) format("truetype"),url(../fonts/Calibre/calibre-medium.svg#Calibre-Medium) format("svg");
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Calibre;
-    src: url(../fonts/Calibre/calibre-semibold.eot);
-    src: url(../fonts/Calibre/calibre-semibold.eot?#iefix) format("embedded-opentype"),url(../fonts/Calibre/calibre-semibold.woff) format("woff"),url(../fonts/Calibre/calibre-semibold.ttf) format("truetype"),url(../fonts/Calibre/calibre-semibold.svg#CalibreSemibold) format("svg");
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Calibre;
-    src: url(../fonts/Calibre/calibre-bold.eot);
-    src: url(../fonts/Calibre/calibre-bold.eot?#iefix) format("embedded-opentype"),url(../fonts/Calibre/calibre-bold.woff) format("woff"),url(../fonts/Calibre/calibre-bold.ttf) format("truetype"),url(../fonts/Calibre/calibre-bold.svg#CalibreBold) format("svg");
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Calibre;
-    src: url(../fonts/Calibre/calibre-bolditalic.eot);
-    src: url(../fonts/Calibre/calibre-bolditalic.eot?#iefix) format("embedded-opentype"),url(../fonts/Calibre/calibre-bolditalic.woff) format("woff"),url(../fonts/Calibre/calibre-bolditalic.ttf) format("truetype"),url(../fonts/Calibre/calibre-bolditalic.svg#CalibreBoldItalic) format("svg");
-    font-weight: 700;
-    font-style: italic;
-}*/
 @font-face {
   font-family: nexa;
   src: url(../fonts/NexaLight.otf);
@@ -593,7 +519,7 @@ ul {
 }
 
 body {
-  color: #011b2a;
+  color: #12bbf6;
   font-family: nexa;
 }
 
@@ -858,7 +784,7 @@ h1 {
   z-index: 110;
   width: 100%;
   height: 50%;
-  background-color: #001d35;
+  background-color: #0371f5;
 }
 
 .background-black ~ .doors-transition {
@@ -1060,7 +986,7 @@ button {
 
 .site__footer {
   padding-bottom: 2.9rem;
-  background-color: #011b2a;
+  background-color: #0371f5;
 }
 
 .site__footer__container {
@@ -2262,7 +2188,7 @@ p.slide__title.project__title.js-project--title {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #06859b;
+  background-color: #12bbf6;
   color: #fff;
   z-index: 10000;
   opacity: 0;
@@ -2329,36 +2255,6 @@ p.slide__title.project__title.js-project--title {
   .form-contact__textarea {
     width: 100%;
   }
-  /*
-        .site__nav {
-            position: fixed;
-            left: 100%;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            background-color: #011b2a;
-            color: #fff;
-            opacity: 0;
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-            -webkit-transition: all .3s ease-out;
-            transition: all .3s ease-out;
-        }
-    
-        .site__nav__menu {
-            padding-top: 23rem;
-        }
-    
-        .site__nav__menu>.menu-item {
-            display: block;
-            padding: 1rem 2.5rem;
-            font-size: 5rem;
-            line-height: 1;
-        }
-    
-        .site__nav__menu>.menu-item:not(:last-child):after {
-            display: none;
-        }*/
 
   .site__logo {
     top: 25px;
@@ -2480,53 +2376,6 @@ p.slide__title.project__title.js-project--title {
   }
 }
 
-/*        #typewriteText{
-         position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  color: #011b2a;
-  text-align: left;
-  font-size: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
-  transform: translate(-50%, -50%);
-  z-index: 1000
-        }*/
-#container {
-  /*  position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 800px;
-      height: 400px;
-      margin: 0 auto;*/
-  /*    position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 300px;
-        color: #011b2a;
-        text-align: left;
-        font-size: 50px;
-        font-weight: 700;
-        text-transform: uppercase;
-        transform: translate(-50%, -50%);
-        z-index: 1000*/
-}
-/*#container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    color: #00879b;
-    text-align: left;
-    font-size: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
-    z-index: 1000;
-
-}*/
 #container {
   direction: rtl;
 }
@@ -2581,43 +2430,6 @@ p.slide__title.project__title.js-project--title {
     transform: scale(1);
   }
 }
-
-/*.mainImg {
-    opacity: 0;
-    visibility: hidden;
-    top: 0;
-    transform: translateX(20%);
-    transform: translateY(7%);
-    position: absolute;
-    z-index: 10;
-     transform: scale(6);
-}
-.intro-logo{
-    animation-name: logoanimate;
-    animation-duration: 4s;
-   
-}
-
-
-@-webkit-keyframes logoanimate {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(0);
-    }
-
-    50% {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    100% {
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(6);
-    }
-
-}*/
 
 .header-ps {
   text-align: center;
@@ -2751,7 +2563,7 @@ article.content-ps .form-radio {
 }
 .heading p {
   font-size: 18px;
-  color: #001d35;
+  color: #0371f5;
 }
 .heading h3 {
   font-size: 1.5rem;
@@ -2863,7 +2675,7 @@ article.content-ps .form-radio {
 /*---------------------------zegzag------------------*/
 
 a.linezegzag {
-  background: linear-gradient(to bottom, #001833 0%, #07c9ba 100%);
+  background: linear-gradient(to bottom, #0371f5 0%, #12bbf6 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 3px 3px;
@@ -2873,8 +2685,6 @@ a.linezegzag {
 
 a.linezegzag:hover {
   background-image: url("linezegzag.svg");
-  /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");*/
-  /*background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='#001833 ' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");*/
   background-position: 0 100%;
   background-size: auto 6px;
   background-repeat: repeat-x;
@@ -3142,11 +2952,11 @@ a.linezegzag:hover {
   color: #fff;
 }
 .btn.btn-main {
-  background-color: #01879c;
+  background-color: #0371f5;
   color: #fff;
   transition: 0.3s ease-in-out;
   padding: 10px 40px;
-  border: 2px solid #01879c;
+  border: 2px solid #0371f5;
   border-radius: 50px;
   text-transform: uppercase;
   font-size: 15px;
@@ -3154,7 +2964,7 @@ a.linezegzag:hover {
 }
 .btn.btn-main:hover {
   background-color: transparent;
-  color: #01879c;
+  color: #12bbf6;
 }
 .theme-dark .text a:hover {
   text-decoration: none;
@@ -3246,7 +3056,7 @@ h4 span,
 h5 span,
 h6 span {
   font-family: nexa-s;
-  color: #fba01c;
+  color: #0371f5;
   display: block;
   line-height: 0.1;
   margin-left: -17px;
@@ -3343,7 +3153,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #001d35;
+  background-color: #0371f5;
 }
 
 .tile__cta p,
@@ -3373,7 +3183,7 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid rgba(22, 76, 167, 0.6);
 }
 .button-ps span {
-  color: #001d35;
+  color: #0371f5;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.7px;
@@ -3428,7 +3238,7 @@ body::-webkit-scrollbar-thumb {
 }
 .related {
   padding: 100px;
-  background: #001d35;
+  background: #0371f5;
 }
 
 .related h2 {

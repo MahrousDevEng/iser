@@ -1,72 +1,70 @@
 /* General link styles */
 .link {
-    outline: none;
-    text-decoration: none;
-    position: relative;
-    font-size: 25px;
-    line-height: 1;
-    color: #9e9ba4;
-    display: inline-block;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  font-size: 25px;
+  line-height: 1;
+  color: #9e9ba4;
+  display: inline-block;
 }
 
 /* Kukuri */
 .link--kukuri {
-    text-transform: uppercase;
-    overflow: hidden;
-    line-height: 1.8;
-    color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  line-height: 1.8;
+  color: #fff;
 }
 
 .link--kukuri:hover {
-    color: #fba01c;
-    text-decoration: none;
+  color: #0371f5;
+  text-decoration: none;
 }
 .link--kukuri:focus {
-
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .link--kukuri::after {
-    content: '';
-    position: absolute;
-    height: 25px;
-    width: 100%;
-    top: 38%;
-    margin-top: -10px;
-    right: 1px;
-    background: #023144;
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
-    -webkit-transition: -webkit-transform 0.4s;
-    transition: transform 0.4s;
-    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 100%;
+  top: 38%;
+  margin-top: -10px;
+  right: 1px;
+  background: #023144;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 .link--kukuri:hover::after {
-    -webkit-transform: translate3d(102%,0,0);
-    transform: translate3d(102%,0,0);
+  -webkit-transform: translate3d(102%, 0, 0);
+  transform: translate3d(102%, 0, 0);
 }
 
 .link--kukuri::before {
-    content: attr(data-letters);
-    position: absolute;
-    z-index: 2;
-    overflow: hidden;
-    color: #fba01c;
-    white-space: nowrap;
-    width: 0%;
-    -webkit-transition: width 0.4s 0.3s;
-    transition: width 0.4s 0.3s;
+  content: attr(data-letters);
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  color: #0371f5;
+  white-space: nowrap;
+  width: 0%;
+  -webkit-transition: width 0.4s 0.3s;
+  transition: width 0.4s 0.3s;
 }
 
 .link--kukuri:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
-
-
 @media screen and (max-width: 42em) {
-    .link--kukuri { font-size: 0.85em; }
-
+  .link--kukuri {
+    font-size: 0.85em;
+  }
 }
